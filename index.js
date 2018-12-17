@@ -8,6 +8,8 @@ app.get('/hello', function (req, res) {
 });
 
 app.get('/emailPayload', function (req, res) {
+  console.log('receiving payload');
+  console.log('-------------------');
   res.send('receiveding pauyload');
 });
 
