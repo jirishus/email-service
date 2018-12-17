@@ -1,0 +1,23 @@
+{
+  "name": "email-service",
+  "version": "1.0.0",
+  "description": "Service to handle lead page emails",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jirishus/email-service.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jirishus/email-service/issues"
+  },
+  "homepage": "https://github.com/jirishus/email-service#readme",
+  "dependencies": {
+    "express": "4.16.4"
+  }
+}
