@@ -1,5 +1,5 @@
 const express = require('express');
-var bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
 
 
 const app = express();
@@ -16,10 +16,18 @@ app.get('/hello', function (req, res) {
   res.send('Hello World')
 });
 
+app.get('/users', function (req, res) {
+ const users = [
+  { name: 'frank' },
+  { name: 'tommy' }
+ ];
+
+ res.send(users);
+});
+
 app.post('/emailPayload', function (req, res) {
   console.log('receiving payload');
   console.log('-------------------');
-  console.log(req.body);
   res.send('receiveding pauyload');
 });
 
