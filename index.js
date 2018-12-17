@@ -19,6 +19,7 @@ app.get('/hello', function (req, res) {
 app.post('/emailPayload', function (req, res) {
   console.log('receiving payload');
   console.log('-------------------');
+  console.log(req.body);
   res.send('receiveding pauyload');
 });
 
